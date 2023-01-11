@@ -1,44 +1,57 @@
 export const SliderItems=[{
     id:1,
-    img:'https://th.bing.com/th/id/R.20dc3df9387a9a6db0678f3e60563792?rik=vS%2b7PyQZA1N4aw&pid=ImgRaw&r=0',
-    title: 'SUMMER SALES',
-    desc: "DONT COMPROMISE ON STYLEGET FLAT 30% OFF YOUR NEW ARRIVALS.",
+    img:'https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/272623163_4913078632101468_3135805886952220446_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHXGWbaVNSzNpbfo2Ufivrm3luLf8d8AR7eW4t_x3wBHghZQ_YmI16yJjuZlJRl7bkBHoUAhz94DP7Ruwy9WTzx&_nc_ohc=jmQZLq_qUx4AX81_WBw&_nc_zt=23&_nc_ht=scontent.flos1-1.fna&oh=00_AfCLl39uQBdp5-Pd4XFh1tXjUnnKK36xJxmb49AWsqFUjQ&oe=63C3134B',
+    title: 'SEAN WELCOMES',
+    desc: "Welcome to easy access to sean courses",
     bg: "f5fafd"
 
 },
 {
     id:2,
-    img:'https://th.bing.com/th/id/R.20dc3df9387a9a6db0678f3e60563792?rik=vS%2b7PyQZA1N4aw&pid=ImgRaw&r=0',
-    title: 'AUTUMN COLLECTION',
-    desc: "DONT COMPROMISE ON STYLEGET FLAT 30% OFF YOUR NEW ARRIVALS.",
+    img:'https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/322543407_468477922118964_3600532529303102893_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGKnT2X7XuiC4FjgMf8805Z1xtZ4zvXm83XG1njO9ebzQGT-x9Dc7q9p0cwM8psGIMbFCW5m_Od5IE9WwKHMh47&_nc_ohc=bXuDWC0uqCoAX80CEjF&_nc_zt=23&_nc_ht=scontent.flos1-1.fna&oh=00_AfCO9pOlFGliLGLGV-vG8ToV97CYHDX9mimmJl-D7PTLwQ&oe=63C1ED20',
+    title: 'MEET OUR TEACHERS',
+    desc: "quality teachers, highly experienced.",
     bg: "fcf8cd",
 
 },
 {
     id:2,
-    img:'https://th.bing.com/th/id/R.20dc3df9387a9a6db0678f3e60563792?rik=vS%2b7PyQZA1N4aw&pid=ImgRaw&r=0',
-    title: 'VERSACE COLLECTIONS',
-    desc: "DONT COMPROMISE ON STYLEGET FLAT 30% OFF YOUR NEW ARRIVALS.",
+    img:'https://scontent.flos1-2.fna.fbcdn.net/v/t39.30808-6/272400712_4905497159526282_3902156971775440798_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeEWOcxw9Z0B2fAUkvEiuNdTeKA5Z8jSZYt4oDlnyNJli77o39fjAGelPEPUC7PTlAkK14KxCJzVyQn6ZX6VxAB_&_nc_ohc=l97pkF6LYAoAX8DrUMN&_nc_zt=23&_nc_ht=scontent.flos1-2.fna&oh=00_AfByfQYbH7MpnzlC-D6YuPKhEp_0eFCjSkzV-oPgeN1X9g&oe=63C320E6',
+    title: 'OUR STAFFS OXLS',
+    desc: "one family",
     bg: "fcf1ef",
 }];
+
 
 export const categories=[
     {
         id: 1,
-        img:"https://th.bing.com/th/id/OIP.N0xZHBBma18z6BQnVHJbzAHaHa?pid=ImgDet&rs=1",
-        title: "SHIRT STYLE",
+        img:"https://www.worddive.com/blog/wp-content/uploads/2017/06/shutterstock_309241937.jpg",
+        title: "ANNALEASE",
     },
     {
         id: 1,
-        img:"https://th.bing.com/th/id/OIP.MXlHde32K6hYUUn5-2m9ZAHaKu?pid=ImgDet&rs=1",
-        title: "LOUNGE WEAR",
+        img:"https://fthmb.tqn.com/bzCTJWqcE4bZCuV_XXuCJw6zfMo=/2121x1414/filters:fill(auto,1)/GettyImages-548929135-59f24924d088c000104ed810.jpg",
+        title: "JENNA",
     },
     {
         id: 1,
-        img:"https://th.bing.com/th/id/OIP.LNVpKwx9--mh_MFc_rJzIwHaLA?pid=ImgDet&rs=1",
-        title: "LIGHT JACKETS",
+        img:"https://ihworld.com/media/3234/istock-664838242_super.jpg?width=600&height=600&mode=crop&quality=75",
+        title: "TEAMA",
     }
 ];
+
+export const videos=[{
+    description:'latest vlogs',
+    link: '../logo/t.mp4'
+}];
+
+export const props= [{
+    name: "Annalease",
+    bio:"a grounded well experienced teacher",
+    subject:"English to russia",
+    imageUrl:"https://www.worddive.com/blog/wp-content/uploads/2017/06/shutterstock_309241937.jpg",
+}]
 
 export const popularProducts=[
     {

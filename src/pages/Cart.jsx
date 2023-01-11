@@ -1,4 +1,3 @@
-import { Add, Remove } from "@material-ui/icons"
 import styled from "styled-components"
 import Announcements from "../components/Announcement"
 import Footer from "../components/Footer"
@@ -8,6 +7,7 @@ import { mobile } from "../responsive"
 const Container = styled.div`
   padding-left: 3px;
 `
+
 const Title = styled.h1`
   font-weight: 300;
   text-align: center;
@@ -52,26 +52,18 @@ const Product = styled.div`
   ${mobile({ flexDirection: "column"})}
 `
 
-const PriceDetail = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: space-between;
-  ${mobile({ padding: "0px", justifyContent: "center" })}
-`
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
   ${mobile({ flexDirection: "column" })}
 `
 
-const ProductColor = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-`
+// const ProductColor = styled.div`
+//   width: 45px;
+//   height: 20px;
+//   border-radius: 20px;
+//   background-color: ${(props) => props.color};
+// `
 
 const Hr = styled.hr`
   background-color: #eee;
@@ -89,24 +81,23 @@ const Details = styled.div`
 `
 
 const Image= styled.img`
-width:200px;
+width:400px;
 ${mobile({width:"100%"})}
 `
-const ProductAmount= styled.div`
-font-size:24px;
-margin:0px;
-${mobile({fontSize:"15px"})}
+const ProductColor = styled.div`
+  width: 45px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: ${(props) => props.color};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
-const ProductAmountContainer= styled.div`
-    display:flex;
-    align-items:center;
-    padding-top: 200px;
-    ${mobile({margin:"5px 15px", paddingTop:"0px"})}
-    `
 const ProductPrice= styled.div`
-    font-size:30px;
-    font-weight:200;
-    margin:5px;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    color:green;
     ${mobile({marginBottom:"20px", fontSize:"25px"})}
 `;
 
@@ -150,9 +141,9 @@ const Cart = () => {
       <Navbar/>
       <Announcements/>
       <Wrapper>
-        <Title>YOUR BAG</Title>
+        <Title>COURSE CART</Title>
         <Top>
-        <TopButton>CONTINUE SHOPPING</TopButton>
+        <TopButton>CHECK MORE COURSES</TopButton>
         <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your WishList(0)</TopText>
@@ -163,61 +154,39 @@ const Cart = () => {
             <Info>
                 <Product>
                     <ProductDetail>
-                        <Image src="https://cdna.lystit.com/photos/2013/12/05/bally-bally-red-leather-hightop-sneakers-product-1-15896718-640660930.jpeg"/>
+                        <Image src="https://www.worddive.com/blog/wp-content/uploads/2017/06/shutterstock_309241937.jpg"/>
                         <Details>
-                            <ProductName><b>Product:</b>JESSIE THUNDER</ProductName>
-                            <ProductID><b>ID:</b>923456712</ProductID>
-                            <ProductColor color="red"/>
-                            <ProductSize><b>Size:</b>37.5</ProductSize>
+                            <ProductName><b>Teacher:</b>ANNALEASE</ProductName>
+                            <ProductID><b>Language:</b> Russian to English</ProductID>
+                            <ProductColor color="rgb(171, 188, 165)"><ProductPrice>$30</ProductPrice></ProductColor>
+                            <ProductSize><b>Rating:</b>4.8/5</ProductSize>
                         </Details>
                     </ProductDetail>
-                    <PriceDetail>
-                        <ProductAmountContainer>
-                            <Add/>
-                                <ProductAmount>2</ProductAmount>
-                            <Remove/>
-                        </ProductAmountContainer>
-                        <ProductPrice> $ 30</ProductPrice>
-                    </PriceDetail>
                 </Product>
                 <Hr/>
-                <Product>
-                    <ProductDetail>
-                        <Image src="https://th.bing.com/th/id/R.686361cbaba47a19636b12b4272a54e9?rik=FXytHlhyCk0Ong&pid=ImgRaw&r=0"/>
+                <ProductDetail>
+                        <Image src="https://fthmb.tqn.com/bzCTJWqcE4bZCuV_XXuCJw6zfMo=/2121x1414/filters:fill(auto,1)/GettyImages-548929135-59f24924d088c000104ed810.jpg"/>
                         <Details>
-                            <ProductName><b>Product:</b>SHIRT</ProductName>
-                            <ProductID><b>ID:</b>12356712</ProductID>
-                            <ProductColor color="gray"/>
-                            <ProductSize><b>Size:</b>M</ProductSize>
+                            <ProductName><b>Teacher:</b>JENNA</ProductName>
+                            <ProductID><b>Language:</b> Russian to English</ProductID>
+                            <ProductColor color="rgb(171, 188, 165)"><ProductPrice>$100</ProductPrice></ProductColor>
+                            <ProductSize><b>Rating:</b>4.8/5</ProductSize>
                         </Details>
-                    </ProductDetail>
-                    <PriceDetail>
-                        <ProductAmountContainer>
-                            <Add/>
-                                <ProductAmount>4</ProductAmount>
-                            <Remove/>
-                        </ProductAmountContainer>
-                        <ProductPrice>$80</ProductPrice>
-                    </PriceDetail>
-                </Product>
+                </ProductDetail>
             </Info>
             <Summary>
                 <SummaryTitle>ORDER SUMMARY</SummaryTitle>
                 <SummaryItem>
                     <SummaryItemText>SubTotal</SummaryItemText>
-                    <SummaryItemPrice>$170</SummaryItemPrice>
+                    <SummaryItemPrice>$130</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryItem>
-                    <SummaryItemText>Estimated Shipping</SummaryItemText>
-                    <SummaryItemPrice>$4</SummaryItemPrice>
-                </SummaryItem>
-                <SummaryItem>
-                    <SummaryItemText>Shipping Discount</SummaryItemText>
+                    <SummaryItemText>Discount coupon</SummaryItemText>
                     <SummaryItemPrice>- $8</SummaryItemPrice>
                 </SummaryItem>
                 <SummaryItem type="total">
                     <SummaryItemText>Total</SummaryItemText>
-                    <SummaryItemPrice>$164</SummaryItemPrice>
+                    <SummaryItemPrice>$122</SummaryItemPrice>
                 </SummaryItem>
                 <Button>CHECKOUT NOW</Button>
             </Summary>

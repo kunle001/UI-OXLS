@@ -1,11 +1,12 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
+import { useEffect } from 'react'
 import {React, useState} from 'react'
 import styled from 'styled-components'
 import {SliderItems} from "../data"
 import { mobile } from '../responsive'
 
 const Container= styled.div`
-    width:100%;
+    width:100vw;
     height:100vh;
     display:flex;
     position:relative;
@@ -35,6 +36,7 @@ const Wrapper = styled.div`
   display: flex;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
   transition: all 2s ease;
+  
 `;
 
 const Slide = styled.div`
@@ -56,9 +58,9 @@ const ImgContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  width: 50%;
+  width: 40%;
   height: 100%;
-  padding: 10% 35%;
+  padding: 20% 35% 0px 24%;
 `;
 
 const Title= styled.h1`
@@ -81,6 +83,14 @@ const Button= styled.button`
 const Slider = () => {
    const [slideIndex, setSlideIndex]= useState(0);
 
+   useEffect(()=>{
+    const intervalId= setInterval(()=>{
+        setSlideIndex(slideIndex<2 ? slideIndex +1 :0);
+    },5000);
+
+    return()=> clearInterval(intervalId);
+   }, [slideIndex]);
+
   const handleClick= (direction)=>{
     if(direction==="left"){
         setSlideIndex(slideIndex>0 ? slideIndex-1:2)
@@ -101,7 +111,7 @@ const Slider = () => {
                         <InfoContainer>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
-                        <Button>SHOP NOW</Button>
+                        <Button>JOIN CLASS</Button>
                     </InfoContainer> 
                 </ImgContainer>
            

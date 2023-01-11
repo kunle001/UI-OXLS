@@ -6,11 +6,12 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { Switch } from 'react-router-dom';
+import TeacherProfile from "./pages/TeachersProfile";
 
 
 function App() {
   return (
-    <Product/>
+    <TeacherProfile/>
   );
 }
 

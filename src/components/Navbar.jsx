@@ -6,11 +6,12 @@ import {mobile} from "../responsive";
 
 
 const Container= styled.div`
-    height: 80px;
-    ${mobile({height:"30px"})}
+    height: 100px;
+    ${mobile({height:"30px"})};
+    background-color:rgb(147, 170, 139);
 `
 const Wrapper= styled.div`
-    padding: 10px 20px;
+    padding: 20px 20px;
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -22,22 +23,20 @@ const Left= styled.div`
 const Center= styled.div`
     flex:1;
 `
-const Logo= styled.h1`
+const Logo = styled.h1`
     font-weight: bold;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align:center;
     ${mobile({fontSize:"24px"})}
 `;
+
 const Right= styled.div`
     flex:1;
     display:flex;
     align-items:center;
     justify-content:flex-end;
     ${mobile({flex:2,justifyContent:"center"})}
-`
-const Language= styled.span`
-    font-size: 14px;
-    cursor: pointer;
-    ${mobile({display:"none"})}
 `
 const SearchContainer= styled.div`
     border:none;
@@ -55,6 +54,13 @@ const MenuItem= styled.div`
     cursor: pointer;
     margin-left:25px;
     ${mobile({fontSize:"10px", marginLeft:"10px"})}
+`;
+
+const Credits= styled.h1`
+    font-weight:900;
+    color: 'green';
+    font-size: 40px;
+    padding:10px;
 `
 
 const Navbar = () => {
@@ -62,14 +68,16 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Language>EN</Language>
                 <SearchContainer>
-                    <Input placeholder='search products'/>
+                    <Input placeholder='search'/>
                     <Search style={{color:"gray", fontSize:16}}/>
                 </SearchContainer>
             </Left>
             <Center><Logo>OXLS</Logo></Center>
             <Right>
+                <MenuItem>COURSE CREDITS:</MenuItem>
+                <Credits>$0</Credits>
+                <MenuItem>BOOK QUICK CLASS</MenuItem>
                 <MenuItem>REGISTER</MenuItem>
                 <MenuItem>SIGN IN</MenuItem>
                 <MenuItem>

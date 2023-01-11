@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import {mobile} from '../responsive'
 const Container= styled.div`
     display:flex;
-    ${mobile({flexDirection:"column"})}
+    ${mobile({flexDirection:"column"})};
+    background-color:rgb(147, 170, 139);
+    margin-top:50px;
 `
 const Left= styled.div`
     flex:1;
