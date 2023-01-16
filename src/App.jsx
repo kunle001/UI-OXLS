@@ -7,11 +7,12 @@ import Register from "./pages/Register";
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import TeacherProfile from "./pages/TeachersProfile";
+import Reviews from "./components/Reviews";
 
 
 function App() {
   return (
-    <TeacherProfile/>
+    <Home/>
   );
 }
 
