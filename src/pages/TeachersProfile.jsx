@@ -132,6 +132,7 @@ const AllInfo= styled.div`
 const AboutDetails= styled.p`
     height:100%;
     width: 100%;
+    padding-top:4px;
 `
 
 
@@ -154,6 +155,7 @@ const ContactButton= styled.button`
     color:black;
     font-weight:bold;
     padding:10px;
+    margin-bottom:8px;
     border-radius:5px;
     border:none;
     width:70%;
@@ -162,7 +164,7 @@ const ContactButton= styled.button`
 `;
 
 const Title= styled.h3`
-    padding:0px 20px 30px 6px;
+    padding:0px 10px 5px 6px;
     cursor:pointer;
     font-family: 'Calibri';
     color:brown;
@@ -179,7 +181,7 @@ const BottomRight= styled.div`
 `;
 
 const ReviewTop = styled.div`
-    flex:1.1;
+    flex:1.2;
     height:500px;
     width: 300px;
     border-radius:10px;
@@ -228,7 +230,8 @@ const RDesc= styled.div`
 `;
 
 const ReviewsWrapper= styled.div`
-    margin-bottom:20px;
+    margin-bottom:5px;
+    width:100%;
 `
 
 const Students= styled.h1`
@@ -248,6 +251,7 @@ const SeeButton= styled.button`
     color:brown;
     background-color: transparent;
     cursor:pointer;
+    padding-bottom:7px;
 `;
 
 const Schedule= styled.div`

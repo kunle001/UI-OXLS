@@ -12,7 +12,7 @@ import Reviews from "./components/Reviews";
 
 function App() {
   return (
-    <Home/>
+    <TeacherProfile/>
   );
 }
 
